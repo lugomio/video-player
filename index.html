@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player - lugom.io</title>
+    <meta property="og:title" content="Video Player - lugom.io">
+    <meta property="og:description" content="Um projeto de aprendizado que consiste em um player de vídeo customizado.">
+    <meta property="og:image" content="https://lugom.io/projects/video-player/assets/img/banner.png">
+    <meta name="twitter:title" content="Video Player - lugom.io">
+    <meta name="twitter:description"
+        content="Um projeto de aprendizado que consiste em um player de vídeo customizado.">
+    <meta name="twitter:image" content="https://lugom.io/projects/video-player/assets/img/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="shortcut icon" href="https://lugom.io/assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="canonical" href="https://lugom.io/projects/video-player/">
+</head>
+
+<body>
+
+    <main>
+        <section class="container">
+            <div id="player">
+                <video id="video"
+                    src="https://embed-ssl.wistia.com/deliveries/4760347ea5039410c4a138db3869e18eac66b2aa.bin"
+                    type="video/mp4">
+                </video>
+
+                <div class="controls">
+                    <div class="timer">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+                    <div class="progress-area">
+                        <div class="progress-bar">
+                        </div>
+                    </div>
+                    <div class="controls-list">
+                        <div class="controls-left">
+                            <div class="volume">
+                                <span class="icon" title="Alterar volume">
+                                    <i class="material-symbols-rounded">volume_up</i>
+                                    <span class="desc">Volume</span>
+                                </span>
+                                <input type="range" min="0" max="100" value="30" id="volume-range">
+                            </div>
+                        </div>
+                        <div class="controls-center">
+                            <span class="icon backward" data-time="-10" title="Voltar 10 segundos">
+                                <i class="material-symbols-rounded">replay_10</i>
+                            </span>
+                            <span class="icon play" title="Play/Pause">
+                                <i class="material-symbols-rounded">play_arrow</i>
+                            </span>
+                            <span class="icon forward" data-time="10" title="Avançar 10 segundos">
+                                <i class="material-symbols-rounded">forward_10</i>
+                            </span>
+                        </div>
+                        <div class="controls-right">
+                            <span class="icon settings" title="Configurações">
+                                <i class="material-symbols-rounded">settings</i>
+                                <span class="desc">Settings</span>
+                            </span>
+                            <span class="icon fullscreen" title="Tela cheia">
+                                <i class="material-symbols-rounded">fullscreen</i>
+                                <span class="desc">Fullscreen</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="settings">
+                    <div class="playspeed">
+                        <div class="header">
+                            <span>Playback Speed</span>
+                            <span class="icon close">
+                                <i class="material-symbols-rounded">close</i>
+                            </span>
+                        </div>
+                        <ul>
+                            <li data-speed="0.25">0.25x</li>
+                            <li data-speed="0.5">0.5x</li>
+                            <li data-speed="0.75">0.75x</li>
+                            <li data-speed="1">Normal</li>
+                            <li data-speed="1.25">1.25x</li>
+                            <li data-speed="1.5">1.5x</li>
+                            <li data-speed="1.75">1.75x</li>
+                            <li data-speed="2">2x</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script id="fixedNavLugomJs" src="https://lugom.io/assets/js/fixedNavLugom.js"></script>
+</body>
+
+</html>
